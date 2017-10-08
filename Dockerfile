@@ -12,6 +12,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Installing apps
 RUN apt-get update && apt-get -y install \
+        net-tools \
 	xvfb \
 	x11vnc \
 	supervisor \
