@@ -30,9 +30,6 @@ RUN git clone https://github.com/novnc/noVNC.git && ln -s /root/noVNC/vnc_auto.h
 # Docker's supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-# /etc/hosts setup script
-COPY append_myhosts.sh /root/append_myhosts.sh
-
 # Set display
 ENV DISPLAY :0
 
